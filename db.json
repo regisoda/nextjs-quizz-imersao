@@ -1,7 +1,7 @@
 {
-    "bg": "https://www.significadofacil.com/wp-content/uploads/2019/07/background-1000x500.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://www.10wallpaper.com/wallpaper/1366x768/1503/Chess_Theme_HD_widescreen_wallpaper_05_1366x768.jpg",
+    "title": "Quiz sobre Xadrez",
+    "description": "Teste os seus conhecimentos sobre o jogo de xadrez. Vamos ver se é um bom jogador ou não.",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -31,9 +31,9 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#039be5",
-        "secondary": "#29b6f6",
-        "mainBg": "#171B35",
+        "primary": "#b26a00",
+        "secondary": "#1c1c1c",
+        "mainBg": "#292929",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
         "success": "#4CAF50"

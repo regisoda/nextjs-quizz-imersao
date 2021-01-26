@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-				<title>Quiz - Imersão</title>
+				<title>Quiz - Xadrez</title>
 				<meta property="og:locale" content="pt_BR" />
 				<meta property="og:image" content={db.bg} />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -51,7 +51,7 @@ export default function Home() {
         </Widget>
         <Footer /> 
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/regisoda/nextjs-quizz-imersao" />
     </QuizBackground>
   );
 }
