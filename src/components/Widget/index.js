@@ -28,7 +28,7 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
-  
+  background-image: linear-gradient(to right, ${({ theme }) => theme.colors.primary}, white);
   * {
     margin: 0;
   }
