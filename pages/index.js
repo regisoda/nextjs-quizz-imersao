@@ -9,8 +9,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import {Input} from '../src/components/Input';
-import {Button} from '../src/components/Button';
+import { Input } from '../src/components/Input';
+import { Button } from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -28,14 +28,14 @@ export default function Home() {
   const [name, setName] = React.useState('');
 
   function handleSubmit(event) {
-		event.preventDefault();
+    event.preventDefault();
 
-		router.push(`/quiz?${name}`);
-	}
+    router.push(`/quiz?${name}`);
+  }
 
   function handleName(event) {
-		setName(event.target.value);
-	}
+    setName(event.target.value);
+  }
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -53,11 +53,11 @@ export default function Home() {
           <Widget.Content>
             <p>{db.description}</p>
             <form onSubmit={handleSubmit}>
-            <Input
-								onChange={handleName}
-								value={name}
-								placeholder="Qual é o seu nome :)"
-							/>
+              <Input
+                onChange={handleName}
+                value={name}
+                placeholder="Qual é o seu nome :)"
+              />
               <Button disabled={name.length === 0}>Jogar</Button>
             </form>
           </Widget.Content>
@@ -68,9 +68,9 @@ export default function Home() {
             <h1>Quizes da Galera</h1>
 
             <p>
-							Dá uma olhada nesses quizes incríveis que o pessoal
-							da Imersão fez:
-						</p>
+              Dá uma olhada nesses quizes incríveis que o pessoal
+              da Imersão fez:
+            </p>
           </Widget.Content>
         </Widget>
         <Footer />
