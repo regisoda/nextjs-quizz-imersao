@@ -41,4 +41,5 @@ const QuizLogo = styled(Logo)`
   }
 `;
 
+// eslint-disable-next-line react/prop-types
 export default QuizLogo;

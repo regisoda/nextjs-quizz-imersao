@@ -1,11 +1,12 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import Head from "next/head";
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -22,17 +23,12 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-				<title>Quiz - Xadrez</title>
-				<meta property="og:locale" content="pt_BR" />
-				<meta property="og:image" content={db.bg} />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-					rel="stylesheet"
-				/>
-			</Head>
+        <title>Quiz - Xadrez</title>
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:image" content={db.bg} />
+      </Head>
       <QuizContainer>
-         <QuizLogo />
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -49,7 +45,7 @@ export default function Home() {
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
-        <Footer /> 
+        <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/regisoda/nextjs-quizz-imersao" />
     </QuizBackground>
