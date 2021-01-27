@@ -54,6 +54,7 @@ export default function Home() {
             <p>{db.description}</p>
             <form onSubmit={handleSubmit}>
               <Input
+                name="nomeDoUsuario"
                 onChange={handleName}
                 value={name}
                 placeholder="Qual é o seu nome :)"
