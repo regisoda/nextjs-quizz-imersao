@@ -1,32 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const DefaultButton = styled.button`
-  width: 100%;
-  height: 36px;
+const Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
-  border-radius: 5px;
-  line-height: 16px;
+  width: 100%;
+  padding: 10px 16px;
+  font-weight: bold;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.25px;
+  line-height: 1;
   text-transform: uppercase;
-  outline: none;
-  color: #fff;
-  background-color: ${({ theme }) => theme.colors.primary};
+  outline: 0;
+  transition: .3s;
   cursor: pointer;
-  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
   &:disabled {
     background-color: #979797;
-  }
-  &:hover {
-    opacity: 0.8;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: not-allowed;
   }
 `;
 
-export function Button(props) {
-  const { children } = props;
+Button.propTypes = {
+  type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
+  children: PropTypes.node.isRequired,
+};
 
-  return <DefaultButton {...props}>{children}</DefaultButton>;
-}
+export default Button;

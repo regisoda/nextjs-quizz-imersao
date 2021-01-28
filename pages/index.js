@@ -10,7 +10,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import { Input } from '../src/components/Input';
-import { Button } from '../src/components/Button';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -59,7 +59,7 @@ export default function Home() {
                 value={name}
                 placeholder="Qual é o seu nome :)"
               />
-              <Button disabled={name.length === 0}>Jogar</Button>
+              <Button type="submit" disabled={name.length === 0}>Jogar</Button>
             </form>
           </Widget.Content>
         </Widget>

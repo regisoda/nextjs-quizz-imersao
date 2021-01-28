@@ -17,11 +17,11 @@ const InputBase = styled.input`
 // eslint-disable-next-line react/jsx-props-no-spreading
 export function Input({ placeholder, ...props }) {
   return (
-    <InputBase 
-            type="text" 
+    <InputBase
+      type="text"
       placeholder={placeholder}
       {...props}
-  />
+    />
   );
 }
 
