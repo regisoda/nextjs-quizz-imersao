@@ -2,14 +2,14 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import QuizScreen from '../../src/screens/Quiz';
+import QuizTemplate from '../../src/screens/Quiz';
 
 export default function QuizDaGaleraPage({ dbExterno }) {
   return (
     <ThemeProvider theme={dbExterno.theme}>
-      <QuizScreen
-        externalQuestions={dbExterno.questions}
-        externalBg={dbExterno.bg}
+      <QuizTemplate
+        questionsQuiz={dbExterno.questions}
+        backgroundQuiz={dbExterno.bg}
       />
     </ThemeProvider>
   );
@@ -37,3 +37,4 @@ export async function getServerSideProps(context) {
     throw new Error(err);
   }
 }
+
